@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: hireiq
+    env: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/v1/health
+    envVars:
+      - key: ENVIRONMENT
+        value: production
+      - key: PROCESSING_MODE
+        value: sync
+      - key: AI_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: DEMO_AI_FALLBACK
+        value: "false"
+      - key: WHISPER_MODEL
+        value: base
+      - key: DATABASE_URL
+        sync: false
+      - key: REDIS_URL
+        sync: false
