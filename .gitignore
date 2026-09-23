@@ -1,0 +1,379 @@
+# =========================================================
+# HireIQ - Root .gitignore
+# React + Vite + FastAPI + Python + Celery + Whisper
+# =========================================================
+
+
+# =========================================================
+# ENVIRONMENT / SECRETS
+# =========================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Local secret/config files
+*.secret
+*.secrets
+secrets/
+credentials/
+.local/
+
+# Never commit API keys
+*_API_KEY
+*_SECRET
+*_TOKEN
+
+
+# =========================================================
+# PYTHON / FASTAPI
+# =========================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python bytecode / caches
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+*.egg
+MANIFEST
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.cache/
+
+# Type checking / linters
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.pyright/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local Python tooling
+.python-version
+
+
+# =========================================================
+# NODE / REACT / VITE
+# =========================================================
+
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn-cache/
+.yarn-integrity
+
+# Vite
+.vite/
+
+# Production builds
+frontend/dist/
+frontend/build/
+dist/
+build/
+
+# Coverage
+frontend/coverage/
+coverage/
+
+# npm logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Local package manager files
+*.tgz
+
+
+# =========================================================
+# TYPESCRIPT
+# =========================================================
+
+*.tsbuildinfo
+
+
+# =========================================================
+# CELERY / REDIS
+# =========================================================
+
+celerybeat-schedule
+celerybeat.pid
+
+# Celery local state
+celerybeat-schedule.*
+*.celery
+
+
+# =========================================================
+# DATABASE / POSTGRESQL
+# =========================================================
+
+# Local SQLite databases (for development/tests)
+*.db
+*.sqlite
+*.sqlite3
+
+# PostgreSQL dumps / local database files
+*.sql.gz
+*.dump
+*.backup
+
+# Local Docker database persistence
+postgres_data/
+postgres-data/
+docker/postgres/
+docker/pgdata/
+pgdata/
+
+
+# =========================================================
+# AUDIO / TEMPORARY FILES
+# =========================================================
+
+# Runtime uploads
+uploads/
+backend/uploads/
+frontend/uploads/
+
+# Temporary audio
+tmp_audio/
+temp_audio/
+audio_tmp/
+backend/tmp/
+backend/temp/
+
+# Common audio generated during development
+*.tmp.wav
+*.tmp.mp3
+*.tmp.m4a
+*.tmp.webm
+*.tmp.ogg
+
+# Runtime temporary files
+tmp/
+temp/
+.tmp/
+.temp/
+
+
+# =========================================================
+# WHISPER / AI MODEL CACHE
+# =========================================================
+
+# Whisper model/cache directories
+.whisper/
+whisper_cache/
+.models/
+ml_models/
+model_cache/
+
+# Hugging Face / ML caches
+.cache/huggingface/
+huggingface_cache/
+
+# Torch cache
+.torch/
+torch_cache/
+
+# General ML model artifacts
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+
+
+# =========================================================
+# GENERATED RUNTIME DATA
+# =========================================================
+
+logs/
+*.log
+
+runtime/
+runtime_data/
+generated/
+generated_reports/
+processed/
+processed_audio/
+
+# Generated PDFs during development
+reports/
+backend/reports/
+
+# Keep the explicitly included sample report/data tracked
+!sample_data/
+!sample_data/*
+!submission_assets/
+
+
+# =========================================================
+# DOCKER
+# =========================================================
+
+# Local Docker override files
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker volumes
+volumes/
+docker/volumes/
+
+
+# =========================================================
+# PLAYWRIGHT / BROWSER TEST ARTIFACTS
+# =========================================================
+
+playwright-report/
+test-results/
+blob-report/
+
+
+# =========================================================
+# FRONTEND LOCAL FILES
+# =========================================================
+
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+frontend/.vite/
+frontend/node_modules/
+frontend/dist/
+
+
+# =========================================================
+# BACKEND LOCAL FILES
+# =========================================================
+
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+backend/node_modules/
+backend/__pycache__/
+backend/.pytest_cache/
+
+
+# =========================================================
+# IDE / EDITOR
+# =========================================================
+
+.vscode/
+.idea/
+*.iml
+
+# VS Code local history
+.history/
+
+# Cursor
+.cursor/
+
+# JetBrains
+*.iws
+*.ipr
+*.iws
+
+
+# =========================================================
+# OPERATING SYSTEM
+# =========================================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+
+# =========================================================
+# ARCHIVES
+# =========================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+
+# =========================================================
+# LOCAL DEMO / PERSONAL NOTES
+# =========================================================
+
+demo-local/
+scratch/
+notes-private/
+local-only/
+
+
+# =========================================================
+# SECURITY / CERTIFICATES
+# =========================================================
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Exception: public example certificate files if ever needed
+!docs/examples/*.crt
+
+
+# =========================================================
+# GENERATED CONFIG / LOCKS NOT NEEDED
+# =========================================================
+
+*.lock.tmp
+
+
+# =========================================================
+# OS / EDITOR BACKUPS
+# =========================================================
+
+*.swp
+*.swo
+*.bak
+*.orig
+*.rej
