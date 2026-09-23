@@ -1,0 +1,32 @@
+Question type: {question_type}
+Question: {question}
+
+Rubric criteria:
+{criteria}
+
+Strong-answer example:
+{strong_example}
+
+Weak-answer example:
+{weak_example}
+
+Candidate transcript:
+{transcript}
+
+Supporting NLP signals (context only, not competence proxies):
+- keywords: {keywords}
+- entities: {entities}
+- sentiment: {sentiment} ({sentiment_compound})
+- confidence heuristic: {confidence_score}/100
+
+Return JSON matching the EvaluationResult schema with:
+- technical_score 0-100
+- problem_solving_score 0-100
+- communication_score 0-100
+- confidence_score 0-100
+- overall_score 0-100
+- sentiment: positive | neutral | negative
+- strengths: 2-5 evidence-based items
+- improvements: 2-5 evidence-based items
+- rationale: concise explanation grounded in transcript evidence
+- recommendation: Proceed | Hold | Reject

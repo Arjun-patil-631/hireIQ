@@ -1,0 +1,39 @@
+name: technical
+version: "1.0"
+description: "Evidence-based technical screening rubric for general software/AI engineering roles."
+criteria:
+  - name: Technical Knowledge
+    weight: 35
+    description: "Correctness, depth, terminology, and understanding of the requested technical concept."
+    levels:
+      excellent: "Accurate, specific explanation with relevant implementation details and trade-offs."
+      good: "Mostly correct explanation with some useful detail."
+      needs_improvement: "Major gaps, incorrect claims, or mostly superficial response."
+  - name: Problem Solving
+    weight: 25
+    description: "Quality of reasoning, decomposition, alternatives, complexity thinking, and trade-offs."
+    levels:
+      excellent: "Structured reasoning, clear assumptions, alternatives, and justified trade-offs."
+      good: "Reasonable approach with some reasoning and trade-off awareness."
+      needs_improvement: "Little reasoning, unclear assumptions, or unsupported approach."
+  - name: Communication
+    weight: 25
+    description: "Clarity, relevance, organization, and ability to explain the idea understandably."
+    levels:
+      excellent: "Concise, logically organized, and easy to follow."
+      good: "Understandable and relevant with minor gaps in structure."
+      needs_improvement: "Hard to follow, highly repetitive, or off-topic."
+  - name: Evidence & Examples
+    weight: 15
+    description: "Use of concrete examples, practical context, or evidence that supports claims."
+    levels:
+      excellent: "Uses a concrete, technically relevant example or evidence."
+      good: "Provides some practical context."
+      needs_improvement: "No concrete evidence or example when one would materially help."
+examples:
+  strong: "A strong answer gives a correct definition, explains why it matters, and uses a concise practical example or trade-off."
+  weak: "A weak answer gives an incorrect or vague definition without reasoning or evidence."
+recommendation_thresholds:
+  proceed: 75
+  hold: 55
+  reject: 0

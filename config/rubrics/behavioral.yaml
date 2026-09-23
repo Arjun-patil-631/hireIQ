@@ -1,0 +1,39 @@
+name: behavioral
+version: "1.0"
+description: "Behavioral interview rubric focused on evidence and communication, not personality inference."
+criteria:
+  - name: Situation & Context
+    weight: 20
+    description: "Clearly establishes the relevant technical or work situation."
+    levels:
+      excellent: "Provides concise context with the relevant constraints."
+      good: "Provides enough context to understand the scenario."
+      needs_improvement: "Context is missing or overly vague."
+  - name: Action & Reasoning
+    weight: 35
+    description: "Explains the actions taken and the reasoning behind them."
+    levels:
+      excellent: "Specific actions with clear reasoning and trade-offs."
+      good: "Actions are clear with some rationale."
+      needs_improvement: "Actions are unclear or unsupported."
+  - name: Technical & Team Impact
+    weight: 25
+    description: "Explains outcome and impact while distinguishing own contribution from team outcomes."
+    levels:
+      excellent: "Clear outcome, measurable where possible, with ownership explained."
+      good: "Outcome is clear but lacks detail."
+      needs_improvement: "Outcome or contribution is unclear."
+  - name: Communication
+    weight: 20
+    description: "Relevant, organized, and understandable answer."
+    levels:
+      excellent: "Well-structured and focused."
+      good: "Generally clear with minor digressions."
+      needs_improvement: "Frequently off-topic or difficult to follow."
+examples:
+  strong: "A strong answer uses a concrete situation, specific actions, reasoning, and measurable or observable outcomes."
+  weak: "A weak answer stays hypothetical, gives vague claims, or does not explain the candidate's actions."
+recommendation_thresholds:
+  proceed: 75
+  hold: 55
+  reject: 0
