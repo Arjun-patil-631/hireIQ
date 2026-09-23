@@ -228,6 +228,7 @@ processed_audio/
 
 # Generated PDFs during development
 reports/
+!backend/app/reports/
 backend/reports/
 
 # Keep the explicitly included sample report/data tracked
