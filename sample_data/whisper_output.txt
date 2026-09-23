@@ -1,0 +1,1 @@
+process of its own address space, while thread share memory inside the process. I would choose thread for lightweight concurrent work, and process is for stronger isolation.

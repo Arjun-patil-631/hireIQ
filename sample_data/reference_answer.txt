@@ -1,0 +1,1 @@
+A process has its own address space, while threads share memory inside a process. I would choose threads for lightweight concurrent work and processes for stronger isolation.

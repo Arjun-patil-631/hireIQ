@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="760" viewBox="0 0 1500 760">
+  <rect width="1500" height="760" fill="#f4f7fb"/>
+  <style>
+    .box{fill:#fff;stroke:#cbd5e1;stroke-width:2;rx:18;ry:18}
+    .dark{fill:#0b1220;stroke:#0b1220}
+    .blue{fill:#eaf2ff;stroke:#7aa2ef}
+    .green{fill:#ecfdf5;stroke:#86efac}
+    .text{font-family:Arial,sans-serif;fill:#18263b}
+    .title{font-size:25px;font-weight:700}
+    .label{font-size:18px;font-weight:700}
+    .small{font-size:13px}
+    .arrow{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}
+  </style>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#64748b"/></marker>
+  </defs>
+  <text x="60" y="55" class="text title">HireIQ — Multimodal AI Interview Intelligence</text>
+  <text x="60" y="84" class="text small">Audio → Whisper → NLP → Rubric-aligned LLM → Validated evaluation → PDF + Dashboard</text>
+
+  <rect x="60" y="135" width="240" height="115" class="box dark"/>
+  <text x="85" y="175" fill="#fff" font-size="18" font-family="Arial" font-weight="700">React / Browser</text>
+  <text x="85" y="202" fill="#cbd5e1" font-size="13" font-family="Arial">Question UI</text>
+  <text x="85" y="222" fill="#cbd5e1" font-size="13" font-family="Arial">MediaRecorder</text>
+  
+  <rect x="370" y="135" width="240" height="115" class="box blue"/>
+  <text x="395" y="175" class="text label">FastAPI</text>
+  <text x="395" y="202" class="text small">Upload + validation</text>
+  <text x="395" y="222" class="text small">Job creation + polling</text>
+
+  <rect x="680" y="135" width="240" height="115" class="box green"/>
+  <text x="705" y="175" class="text label">Redis + Celery</text>
+  <text x="705" y="202" class="text small">Async worker queue</text>
+  <text x="705" y="222" class="text small">Horizontal worker path</text>
+
+  <rect x="990" y="110" width="220" height="75" class="box"/>
+  <text x="1015" y="150" class="text label">PostgreSQL</text>
+  <text x="1015" y="170" class="text small">Candidates · Sessions · Scores</text>
+
+  <rect x="990" y="205" width="220" height="75" class="box"/>
+  <text x="1015" y="245" class="text label">YAML Rubric</text>
+  <text x="1015" y="265" class="text small">External scoring criteria</text>
+
+  <path d="M300 192 L370 192" class="arrow"/><path d="M610 192 L680 192" class="arrow"/><path d="M920 170 L990 145" class="arrow"/><path d="M920 220 L990 242" class="arrow"/>
+
+  <rect x="370" y="325" width="240" height="110" class="box"/>
+  <text x="395" y="360" class="text label">PyDub</text>
+  <text x="395" y="388" class="text small">Normalize mono 16 kHz</text>
+  <text x="395" y="408" class="text small">Temporary WAV only</text>
+
+  <rect x="680" y="325" width="240" height="110" class="box"/>
+  <text x="705" y="360" class="text label">OpenAI Whisper</text>
+  <text x="705" y="388" class="text small">Speech-to-text</text>
+  <text x="705" y="408" class="text small">Transcript + timestamps</text>
+
+  <rect x="990" y="325" width="220" height="110" class="box"/>
+  <text x="1015" y="360" class="text label">NLP layer</text>
+  <text x="1015" y="388" class="text small">spaCy keywords/entities</text>
+  <text x="1015" y="408" class="text small">VADER sentiment + confidence</text>
+
+  <path d="M800 250 L800 325" class="arrow"/><path d="M610 380 L680 380" class="arrow"/><path d="M920 380 L990 380" class="arrow"/>
+
+  <rect x="480" y="510" width="260" height="120" class="box blue"/>
+  <text x="510" y="550" class="text label">Gemini Structured Output</text>
+  <text x="510" y="578" class="text small">Rubric + question + transcript</text>
+  <text x="510" y="599" class="text small">JSON schema response</text>
+
+  <rect x="810" y="510" width="240" height="120" class="box green"/>
+  <text x="840" y="550" class="text label">Pydantic Gate</text>
+  <text x="840" y="578" class="text small">Validate before DB storage</text>
+  <text x="840" y="599" class="text small">Reject malformed output</text>
+
+  <rect x="1120" y="500" width="250" height="140" class="box dark"/>
+  <text x="1145" y="540" fill="#fff" font-size="18" font-family="Arial" font-weight="700">Outputs</text>
+  <text x="1145" y="568" fill="#cbd5e1" font-size="13" font-family="Arial">Dashboard</text>
+  <text x="1145" y="590" fill="#cbd5e1" font-size="13" font-family="Arial">PDF + radar chart</text>
+  <text x="1145" y="612" fill="#cbd5e1" font-size="13" font-family="Arial">Transcript review</text>
+
+  <path d="M920 435 L610 510" class="arrow"/><path d="M740 570 L810 570" class="arrow"/><path d="M1050 570 L1120 570" class="arrow"/>
+  <text x="60" y="690" class="text small">Retention control: original and normalized audio are deleted after transcription. Candidate data is treated as sensitive.</text>
+</svg>
